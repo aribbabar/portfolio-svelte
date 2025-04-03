@@ -1,0 +1,17 @@
+@import "../node_modules/theme-toggles/css/classic.min.css";
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    cupcake;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: default;
+}
